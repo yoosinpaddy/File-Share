@@ -81,7 +81,7 @@ public class HomeActivity
         mActionMode = findViewById(R.id.content_powerful_action_mode);
         mNavigationView = findViewById(R.id.nav_view);
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        mTrustZoneToggle = mNavigationView.getMenu().findItem(R.id.menu_activity_trustzone);
+//        mTrustZoneToggle = mNavigationView.getMenu().findItem(R.id.menu_activity_trustzone);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.text_navigationDrawerOpen, R.string.text_navigationDrawerClose);
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -144,11 +144,11 @@ public class HomeActivity
         }
 
         if (Keyword.Flavor.googlePlay.equals(AppUtils.getBuildFlavor())) {
-            MenuItem donateItem = mNavigationView.getMenu()
-                    .findItem(R.id.menu_activity_main_donate);
-
-            if (donateItem != null)
-                donateItem.setVisible(true);
+//            MenuItem donateItem = mNavigationView.getMenu()
+//                    .findItem(R.id.menu_activity_main_donate);
+//
+//            if (donateItem != null)
+//                donateItem.setVisible(true);
         }
     }
 
@@ -217,9 +217,9 @@ public class HomeActivity
             // Do nothing
         } else if (R.id.menu_activity_main_manage_devices == mChosenMenuItemId) {
             startActivity(new Intent(this, ManageDevicesActivity.class));
-        } else if (R.id.menu_activity_main_about == mChosenMenuItemId) {
+        }/* else if (R.id.menu_activity_main_about == mChosenMenuItemId) {
             startActivity(new Intent(this, AboutActivity.class));
-        } else if (R.id.menu_activity_main_send_application == mChosenMenuItemId) {
+        }*/ else if (R.id.menu_activity_main_send_application == mChosenMenuItemId) {
             new ShareAppDialog(HomeActivity.this)
                     .show();
         } else if (R.id.menu_activity_main_web_share == mChosenMenuItemId) {
@@ -228,7 +228,7 @@ public class HomeActivity
             startActivity(new Intent(this, PreferencesActivity.class));
         } else if (R.id.menu_activity_main_exit == mChosenMenuItemId) {
             exitApp();
-        } else if (R.id.menu_activity_main_donate == mChosenMenuItemId) {
+        } /*else if (R.id.menu_activity_main_donate == mChosenMenuItemId) {
             try {
                 startActivity(new Intent(this, Class.forName("com.genonbeta.TrebleShot.activity.DonationActivity")));
             } catch (ClassNotFoundException e) {
@@ -259,7 +259,7 @@ public class HomeActivity
             AppUtils.createFeedbackIntent(HomeActivity.this);
         } else if (R.id.menu_activity_trustzone == mChosenMenuItemId) {
             toggleTrustZone();
-        }
+        }*/
 
         mChosenMenuItemId = 0;
     }
@@ -267,7 +267,7 @@ public class HomeActivity
     private void createHeaderView()
     {
         View headerView = mNavigationView.getHeaderView(0);
-        MenuItem surveyItem = mNavigationView.getMenu().findItem(R.id.menu_activity_main_dev_survey);
+//        MenuItem surveyItem = mNavigationView.getMenu().findItem(R.id.menu_activity_main_dev_survey);
         Configuration configuration = getApplication().getResources().getConfiguration();
 
         if (Build.VERSION.SDK_INT >= 24) {
@@ -276,11 +276,11 @@ public class HomeActivity
             if (list.size() > 0)
                 for (int pos = 0; pos < list.size(); pos++)
                     if (list.get(pos).toLanguageTag().startsWith("en")) {
-                        surveyItem.setVisible(true);
+//                        surveyItem.setVisible(true);
                         break;
                     }
         } else
-            surveyItem.setVisible(configuration.locale.toString().startsWith("en"));
+//            surveyItem.setVisible(configuration.locale.toString().startsWith("en"));
 
         if (headerView != null) {
             NetworkDevice localDevice = AppUtils.getLocalDevice(getApplicationContext());
@@ -313,8 +313,8 @@ public class HomeActivity
 
     private void highlightUpdater(String availableVersion)
     {
-        MenuItem item = mNavigationView.getMenu().findItem(R.id.menu_activity_main_about);
-        item.setTitle(R.string.text_newVersionAvailable);
+//        MenuItem item = mNavigationView.getMenu().findItem(R.id.menu_activity_main_about);
+//        item.setTitle(R.string.text_newVersionAvailable);
     }
 
     public void requestTrustZoneStatus()
