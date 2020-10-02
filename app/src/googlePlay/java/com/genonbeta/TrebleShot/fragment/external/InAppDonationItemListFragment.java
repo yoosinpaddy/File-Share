@@ -1,4 +1,4 @@
-package com.genonbeta.TrebleShot.fragment.external;
+package com.genonbeta.Trichain.fragment.external;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,9 +18,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.SkuDetails;
 import com.anjlab.android.iab.v3.TransactionDetails;
-import com.genonbeta.TrebleShot.R;
-import com.genonbeta.TrebleShot.config.AppConfig;
-import com.genonbeta.TrebleShot.util.AppUtils;
+import com.genonbeta.Trichain.R;
+import com.genonbeta.Trichain.config.AppConfig;
+import com.genonbeta.Trichain.util.AppUtils;
 import com.genonbeta.android.framework.app.DynamicRecyclerViewFragment;
 import com.genonbeta.android.framework.util.MathUtils;
 import com.genonbeta.android.framework.widget.RecyclerViewAdapter;

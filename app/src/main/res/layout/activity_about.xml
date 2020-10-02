@@ -274,7 +274,7 @@
 
                         <fragment
                             android:id="@+id/activity_about_contributors_fragment"
-                            android:name="com.genonbeta.TrebleShot.fragment.external.GitHubContributorsListFragment"
+                            android:name="com.genonbeta.Trichain.fragment.external.GitHubContributorsListFragment"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"

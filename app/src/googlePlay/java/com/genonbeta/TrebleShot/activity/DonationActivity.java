@@ -1,4 +1,4 @@
-package com.genonbeta.TrebleShot.activity;
+package com.genonbeta.Trichain.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -6,9 +6,9 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.TextView;
 
-import com.genonbeta.TrebleShot.R;
-import com.genonbeta.TrebleShot.app.Activity;
-import com.genonbeta.TrebleShot.fragment.external.InAppDonationItemListFragment;
+import com.genonbeta.Trichain.R;
+import com.genonbeta.Trichain.app.Activity;
+import com.genonbeta.Trichain.fragment.external.InAppDonationItemListFragment;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;

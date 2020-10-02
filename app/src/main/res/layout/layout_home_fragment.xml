@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,11 +20,22 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_home_navigator_container"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7432832056052037/1089872501"
+        ads:layout_constraintBottom_toBottomOf="parent" />
+
+
     <!-- This will keep the snackbar in the right place -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/layout_home_navigator_container">
+        android:layout_above="@id/adView">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/layout_home_view_pager"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="text_appName">TrebleShot</string>
+    <string name="text_appName">Trichain</string>
     <string name="text_navigationDrawerOpen">ナビゲーションドロワーを開く</string>
     <string name="text_navigationDrawerClose">ナビゲーションドロワーを閉じる</string>
     <string name="text_preferences">設定</string>

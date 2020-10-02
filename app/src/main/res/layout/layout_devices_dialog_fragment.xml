@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/devices_fragment"
-        android:name="com.genonbeta.TrebleShot.fragment.NetworkDeviceListFragment"
+        android:name="com.genonbeta.Trichain.fragment.NetworkDeviceListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:tag="devicesFragment" />

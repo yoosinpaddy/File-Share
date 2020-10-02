@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/activity_text_stream_fragment"
-        android:name="com.genonbeta.TrebleShot.fragment.TextStreamListFragment"
+        android:name="com.genonbeta.Trichain.fragment.TextStreamListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
