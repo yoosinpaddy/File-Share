@@ -78,6 +78,8 @@ public class HomeFragment
     }
 
     private void showAds() {
+        if (getActivity()==null)
+            return;
         AdMobSingleton adMobSingleton;
         adMobSingleton = AdMobSingleton.getInstance(getActivity());
         Log.e(TAG, "loadAdAndStartIntent: Attempting to load ads ");

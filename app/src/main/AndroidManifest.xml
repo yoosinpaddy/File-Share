@@ -213,6 +213,7 @@
         </service><meta-data
         android:name="com.google.android.gms.ads.APPLICATION_ID"
         android:value="ca-app-pub-7432832056052037~6497632924" />
+        <!--android:value="ca-app-pub-3940256099742584~3347511715" />-->
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

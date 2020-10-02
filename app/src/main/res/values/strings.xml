@@ -472,4 +472,5 @@
     <string name="butn_showAsQrCode">Show as QR code</string>
     <string name="text_showAsQrCode" translatable="false">@string/butn_showAsQrCode</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-7432832056052037/7463709165</string>
+<!--    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
 </resources>

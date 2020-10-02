@@ -23,7 +23,8 @@ public class AdMobSingleton {
     }
 
     private AdMobSingleton(Activity activity) {
-        sInterstitialAd = newInterstitialAd(activity);
+        if (activity!=null)
+            sInterstitialAd = newInterstitialAd(activity);
     }
 
     public static synchronized AdMobSingleton getInstance(Activity activity) {
